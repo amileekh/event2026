@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Свадебное приглашение — Дамир и Элина</title>
+
+  <!-- Декоративные шрифты -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #fff 0%, #f6efe5 100%);
+      color: #3a3a3a;
+      text-align: center;
+      overflow-x: hidden;
+      padding: 0 120px;
+      position: relative;
+    }
+
+   /* Казахский орнамент по бокам */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  background-image: url("ornament.png");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: 80px auto;
+  z-index: -1;
+}
+
+body::before {
+  left: 0;
+}
+
+body::after {
+  right: 0;
+  transform: scaleX(-1); /* зеркально */
+}
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h1, h2 {
+      font-family: 'Cinzel Decorative', serif;
+      color: #b08a2e;
+      letter-spacing: 3px;
+    }
+
+   h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 54px;
+  font-weight: bold;
+  color: #b08a2e;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+    h2 {
+      font-size: 30px;
+      margin-top: 60px;
+    }
+
+    .names {
+      font-family: 'Great Vibes', cursive;
+      font-size: 56px;
+      font-weight: bold;
+      color: #b08a2e;
+      margin: 40px 0 20px;
+    }
+
+    .date {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 22px;
+      color: #7a5c1d;
+      margin-bottom: 30px;
+    }
+
+    .divider {
+      width: 160px;
+      height: 2px;
+      background: linear-gradient(to right, transparent, #c9a24d, transparent);
+      margin: 40px auto;
+    }
+
+    .details {
+      font-size: 20px;
+      line-height: 1.8;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .photo {
+      margin: 50px auto;
+      max-width: 420px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+
+    .photo img {
+      width: 100%;
+      display: block;
+    }
+
+    iframe {
+      width: 100%;
+      height: 320px;
+      border: none;
+      border-radius: 14px;
+      margin-top: 20px;
+    }
+
+    form {
+      margin-top: 40px;
+      background: rgba(255,255,255,0.85);
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    input, select, textarea, button {
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      font-size: 16px;
+      border-radius: 10px;
+      border: 1px solid #c9a24d;
+      font-family: 'Cinzel Decorative', serif;
+    }
+
+    button {
+      background: linear-gradient(135deg, #c9a24d, #b08a2e);
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    .footer {
+      margin-top: 70px;
+      font-size: 18px;
+      color: #6d5a2a;
+      font-family: 'Great Vibes', cursive;
+    }
+
+    @media (max-width: 600px) {
+      .names { font-size: 42px; }
+      h1 { font-size: 34px; }
+    }
+    @media (max-width: 768px) {
+
+  body {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  body::before,
+  body::after {
+    width: 40px;
+    background-size: 30px auto;
+    opacity: 0.5;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Приглашение на свадьбу</h1>
+    <div class="divider"></div>
+
+    <p class="details">
+      С огромной радостью и теплотой в сердце приглашаем вас разделить с нами
+      один из самых светлых и счастливых дней нашей жизни.
+    </p>
+
+    <div class="names">Дамир & Элина</div>
+    <div class="date">7 августа 2026 года</div>
+
+    <div class="photo">
+      <img src="photo.jpg.jpg" alt="Дамир и Элина">
+    </div>
+
+    <div class="divider"></div>
+
+    <h2>Программа дня</h2>
+    <p class="details">
+      💍 <strong>11:00</strong><br>
+      Регистрация брака<br>
+      Дворец бракосочетания<br>
+      г. Саратов,ул. Некрасова, 25/22
+    </p>
+
+    <div class="divider"></div>
+
+    <p class="details">
+      🥂 <strong>14:00</strong><br>
+      Банкет<br>
+      Ресторан «Счастье»<br /> 
+      г. Саратов, ул. Крайняя, 129/4 </p>
+
+    <iframe src="https://yandex.ru/map-widget/v1/?text=Саратов%20ресторан%20Счастье"></iframe>
+
+    <div class="divider"></div>
+
+    <h2>Подтвердите присутствие</h2>
+
+    <form action="https://formspree.io/f/xdaaoyov" method="POST">
+      <input type="text" name="name" placeholder="Ваше имя и фамилия" required>
+      <select name="attendance" required>
+        <option value="">Вы сможете присутствовать?</option>
+        <option>Да, с радостью приду</option>
+        <option>К сожалению, не смогу</option>
+      </select>
+      <textarea name="message" placeholder="Комментарий (по желанию)"></textarea>
+      <button type="submit">Отправить ответ</button>
+    </form>
+
+    <div class="footer">
+      С любовью и уважением 🤍<br>
+      Дамир и Элина
+    </div>
+  </div>
+</body>
+</html>
